@@ -15,7 +15,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="1.webp">
 
-    <!-- STRUKTŪRIZUOTI DUOMENYS (Schema.org - padeda Google suprasti verslą) -->
+    <!-- STRUKTŪRIZUOTI DUOMENYS (Schema.org) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,6 +29,12 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- TIESIOGINIS STILIUS MOBILIOJO MENIU MYGTUKUI -->
+    <style>
+        .menu-toggle { display: none; }
+        @media (max-width: 768px) { .menu-toggle { display: block; } }
+    </style>
 </head>
 <body>
 
@@ -166,14 +172,13 @@
             <p>&copy; 2026 Nevystantys augalai. Visos teisės saugomos.</p>
         </div>
     </footer>
-<!-- NUOTRAUKŲ PADIDINIMO LANGAS -->
-<div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
-    <button id="lightbox-close" class="lightbox-close" aria-label="Uždaryti">&times;</button>
-    <img id="lightbox-img" src="" alt="">
-</div>
 
-<script src="script.js"></script>
+    <!-- NUOTRAUKŲ PADIDINIMO LANGAS (LIGHTBOX) -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+        <button id="lightbox-close" class="lightbox-close" aria-label="Uždaryti">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
-

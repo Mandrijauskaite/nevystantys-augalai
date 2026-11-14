@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nevystantysaugalai.netlify.app
+Sitemap: https://nevystantysaugalai.netlify.app/sitemap.xml
